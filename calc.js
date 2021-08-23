@@ -34,6 +34,18 @@ reader.question("What would you like to calculate?", function(input){
 		let sqrt = Math.sqrt(num1);
 		console.log("The Square Root of ", num1, "is ", sqrt)
 	}
+	if (mathSymbol === "pow"){
+		let pow = Math.pow(num1,2);
+		console.log("The Square of", num1, "is ", pow)
+	}
+	if (mathSymbol === "cubbed"){
+		let cubbed = Math.pow(num1,3);
+		console.log("The ", num1, "cubbed is ", cubbed)
+	}
+	//Remainder not yet working
+	if (mathSymbol === "%"){
+		console.log(num1 % num2)
+	}
 	// This line closes the connection to the command line interface.
 	reader.close()
 
